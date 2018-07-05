@@ -12,6 +12,20 @@
 
 <body>
 
+  <script id="main-template" type="text/x-handlebars-template">
+    {{#people}}
+    <div class="entry">
+      <h1>{{firstName}}</h1>
+      <div class="body">
+        {{lastName}}
+      </div>
+    </div>
+    {{/people}}
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="handlebars.js"></script>
   <script src="main.js"></script>
 </body>
 
