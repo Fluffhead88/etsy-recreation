@@ -11,26 +11,29 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="sidebar" class="row">
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-3">
-        <p>Sidebar<br /> Ham Sandwich <br></p>
+        <div class="sidebar">
+          <p>Sidebar</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row template-data">
-      <div class="col-9"></div>
+      <div class="col-9 card-area">
+        <div class="row template-data">
+        </div>
+      </div>
     </div>
   </div>
   <script id="main-template" type="text/x-handlebars-template">
     {{#results}}
-    <div class="cards">
+    <a href={{url}} <div class="cards">
       <img class="images" src={{Images.0.url_fullxfull}} alt=>
       <h1 class="title">{{title}}</h1>
       <p class="name">{{Shop.shop_name}}</p>
       <p class="price">${{price}}</p>
+      </a>
     </div>
-
     {{/results}}
   </script>
 
