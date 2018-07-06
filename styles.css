@@ -14,9 +14,32 @@ img {
 
 #sidebar {
   width: 30px;
+  height: 100%;
+  background-color: black;
 }
 
-/* .images {
-  width: 40px;
-  height: 40px;
-} */
+.cards {
+  height: 300px;
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 20%;
+  padding: 5px;
+}
+
+.images {
+  height: 200px;
+  width: 255px;
+  padding: 5px;
+}
+
+.title {
+  font-size: 10pt;
+}
+
+.name {
+  font-size: 8pt;
+}
+
+.price {
+  font-size: 5pt, bold;
+}

@@ -14,19 +14,21 @@
   <div class="container">
     <div id="sidebar" class="row">
       <div class="col-3">
+        <p>Sidebar<br /> Ham Sandwich <br></p>
       </div>
     </div>
+
     <div class="row template-data">
-      <div class="col-3"></div>
+      <div class="col-9"></div>
     </div>
   </div>
   <script id="main-template" type="text/x-handlebars-template">
     {{#results}}
-    <div class="images">
-      <img src={{Images.0.url_fullxfull}} alt=>
-      <h1>{{title}}</h1>
-      <p>{{Shop.shop_name}}</p>
-      <p>${{price}}</p>
+    <div class="cards">
+      <img class="images" src={{Images.0.url_fullxfull}} alt=>
+      <h1 class="title">{{title}}</h1>
+      <p class="name">{{Shop.shop_name}}</p>
+      <p class="price">${{price}}</p>
     </div>
 
     {{/results}}
