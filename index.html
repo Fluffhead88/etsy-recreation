@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-3">
         <div class="sidebar">
-          <div class="section-1">
+          <div class="section 1">
             <h1>All categories</h1>
             <ul>
               <li class="categories"><a href="#">Books, Movies & Music</a></li>
@@ -24,41 +24,43 @@
             </ul>
             <a href="#" class="more">+ Show more</a>
             <hr>
-            <div class="section-2">
+            <div class="section 2">
               <h1>Shipping</h1>
               <input type="checkbox" value="Free shipping"> Free shipping <br>
               <input type="checkbox" value="1 day"> Ready to ship in 1 business day <br>
               <input type="checkbox" value="3 day"> Ready to ship within 3 business <br> days
               <hr>
             </div>
-            <div class="section-3">
+            <div class="section 3">
               <h1>Special Offers</h1>
               <input type="checkbox" value="On Sale"> On sale <br>
               <hr>
             </div>
-            <div class="section-4">
+            <div class="section 4">
               <h1>Shop location</h1>
-              <input type="checkbox" value="Anywhere"> Anywhere <br>
-              <input type="checkbox" value="US"> United States <br>
+
+              <input type="radio" value="Anywhere"> Anywhere <br>
+              <input type="radio" value="US"> United States <br>
+
               <hr>
             </div>
-            <div class="section-5">
+            <div class="section 5">
               <h1>Item type</h1>
-              <input type="checkbox" value="All items"> All items <br>
-              <input type="checkbox" value="Handmade"> Handmade <br>
-              <input type="checkbox" value="Vintage"> Vintage <br>
+              <input type="radio" value="All items"> All items <br>
+              <input type="radio" value="Handmade"> Handmade <br>
+              <input type="radio" value="Vintage"> Vintage <br>
               <hr>
             </div>
-            <div class="section-6">
+            <div class="section 6">
               <h1>Price ($)</h1>
-              <input type="checkbox" value="Any price"> Any price <br>
-              <input type="checkbox" value="Under $25"> Under $25 <br>
-              <input type="checkbox" value="$25-$50"> $25 to $50 <br>
-              <input type="checkbox" value="$50-$100"> $50 to $100 <br>
-              <input type="checkbox" value="$100-"> Over $100 <br>
+              <input type="radio" value="Any price"> Any price <br>
+              <input type="radio" value="Under $25"> Under $25 <br>
+              <input type="radio" value="$25-$50"> $25 to $50 <br>
+              <input type="radio" value="$50-$100"> $50 to $100 <br>
+              <input type="radio" value="$100-"> Over $100 <br>
               <hr>
             </div>
-            <div class="section-7">
+            <div class="section 7">
               <h1>Ordering options</h1>
               <input type="checkbox" value="gift cards"> Accepts Etsy gift cards <br>
               <input type="checkbox" value="Customizable"> Customizable <br>
@@ -79,7 +81,7 @@
   <script id="main-template" type="text/x-handlebars-template">
     {{#results}}
     <a href={{url}} <div class="cards">
-      <img class="images" src={{Images.0.url_fullxfull}} alt=>
+      <img class="images" src={{Images.0.url_fullxfull}} alt="item image">
       <h1 class="title">{{title}}</h1>
       <p class="name">{{Shop.shop_name}}</p>
       <p class="price">${{price}}</p>
